@@ -19,3 +19,10 @@ $pkg = Package::getByHandle('recaptcha');
 		<?=$form->text('CAPTCHA_RECAPTCHA_PRIVATE_KEY', $pkg->config('CAPTCHA_RECAPTCHA_PRIVATE_KEY'), array('class' => 'span6'))?>
 	</div>
 </div>
+
+<div class="clearfix">
+	<?=$form->label('CAPTCHA_RECAPTCHA_THEME', t('Theme'))?>
+	<div class="input">
+		<?=$form->select('CAPTCHA_RECAPTCHA_THEME', array('red' => t('red (default theme'), 'white' => t('white'), 'blackglass' => t('blackglass'), 'clean' => t('clean')), $pkg->config('CAPTCHA_RECAPTCHA_THEME'))?>
+	</div>
+</div>
