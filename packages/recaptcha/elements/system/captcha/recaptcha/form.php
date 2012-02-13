@@ -23,6 +23,6 @@ $pkg = Package::getByHandle('recaptcha');
 <div class="clearfix">
 	<?=$form->label('CAPTCHA_RECAPTCHA_THEME', t('Theme'))?>
 	<div class="input">
-		<?=$form->select('CAPTCHA_RECAPTCHA_THEME', array('red' => t('red (default theme'), 'white' => t('white'), 'blackglass' => t('blackglass'), 'clean' => t('clean')), $pkg->config('CAPTCHA_RECAPTCHA_THEME'))?>
+		<?=$form->select('CAPTCHA_RECAPTCHA_THEME', array('red' => t('red (default theme)'), 'white' => t('white'), 'blackglass' => t('blackglass'), 'clean' => t('clean')), $pkg->config('CAPTCHA_RECAPTCHA_THEME'))?>
 	</div>
 </div>
