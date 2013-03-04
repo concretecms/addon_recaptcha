@@ -6,7 +6,7 @@ class RecaptchaPackage extends Package {
 
 	protected $pkgHandle = 'recaptcha';
 	protected $appVersionRequired = '5.5.0b1';
-	protected $pkgVersion = '1.0';
+	protected $pkgVersion = '1.1';
 	
 	public function getPackageDescription() {
 		return t("Adds reCAPTCHA as a captcha option.");
