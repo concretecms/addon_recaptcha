@@ -7,22 +7,15 @@ $pkg = Package::getByHandle('recaptcha');
 ?>
 
 <div class="clearfix">
-	<?=$form->label('CAPTCHA_RECAPTCHA_PUBLIC_KEY', t('Public Key'))?>
+	<?=$form->label('CAPTCHA_RECAPTCHA_SITE_KEY', t('Site Key'))?>
 	<div class="input">
-		<?=$form->text('CAPTCHA_RECAPTCHA_PUBLIC_KEY', $pkg->config('CAPTCHA_RECAPTCHA_PUBLIC_KEY'), array('class' => 'span6'))?>
+		<?=$form->text('CAPTCHA_RECAPTCHA_SITE_KEY', $pkg->config('CAPTCHA_RECAPTCHA_SITE_KEY'), array('class' => 'span6'))?>
 	</div>
 </div>
 
 <div class="clearfix">
-	<?=$form->label('CAPTCHA_RECAPTCHA_PRIVATE_KEY', t('Private Key'))?>
+	<?=$form->label('CAPTCHA_RECAPTCHA_SECRET_KEY', t('Secret Key'))?>
 	<div class="input">
-		<?=$form->text('CAPTCHA_RECAPTCHA_PRIVATE_KEY', $pkg->config('CAPTCHA_RECAPTCHA_PRIVATE_KEY'), array('class' => 'span6'))?>
-	</div>
-</div>
-
-<div class="clearfix">
-	<?=$form->label('CAPTCHA_RECAPTCHA_THEME', t('Theme'))?>
-	<div class="input">
-		<?=$form->select('CAPTCHA_RECAPTCHA_THEME', array('red' => t('red (default theme)'), 'white' => t('white'), 'blackglass' => t('blackglass'), 'clean' => t('clean')), $pkg->config('CAPTCHA_RECAPTCHA_THEME'))?>
+		<?=$form->text('CAPTCHA_RECAPTCHA_SECRET_KEY', $pkg->config('CAPTCHA_RECAPTCHA_SECRET_KEY'), array('class' => 'span6'))?>
 	</div>
 </div>
